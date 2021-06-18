@@ -1,7 +1,8 @@
 #include <stdio.h>
 
 /**
- * main - print base ten number
+ * main - print all digits that are base 10,
+ * starting from 0, and new line
  * Return: Always 0 (Success)
  */
 int main(void)
