@@ -10,6 +10,8 @@ int main(void)
 
 	for (n = 48; m <= 58; n++)
 	{
+		for (m = 48; m <= 57; m++)
+		{
 		if (m > n)
 		{
 			putchar(n);
@@ -21,6 +23,7 @@ int main(void)
 			}
 		}
 	}
+}
 	putchar('\n');
 	return (0);
 }
