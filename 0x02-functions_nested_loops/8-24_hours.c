@@ -1,8 +1,7 @@
 #include "holberton.h"
 
 /**
- * jack_bauer - prints every mintute of the 
- * day
+ * jack_bauer - prints every min of the day
  * Return:void
  */
 
