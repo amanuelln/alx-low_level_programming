@@ -3,7 +3,7 @@
 
 /**
  * main - main block
- * Description: computers and prints the sume of all 
+ * Description: computers and prints the sume of all
  * 5 below 1024 (exclude), followed by new line
  * Return: 0
  */
