@@ -1,7 +1,7 @@
 #include "holberton.h"
 
-/*
- * main -test for the code
+/**
+ * main -test function for signs
  * Return: 0
  */
 
