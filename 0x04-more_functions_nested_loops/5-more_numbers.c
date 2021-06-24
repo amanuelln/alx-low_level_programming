@@ -4,7 +4,7 @@
  * more_numbers - prints 0 to 14 ,10 times
  * followed by a new line
  */
-void more_numbers(void);
+void more_numbers(void)
 {
 	char n, c;
 	int i = 0;
