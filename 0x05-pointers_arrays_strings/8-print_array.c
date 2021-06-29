@@ -7,7 +7,7 @@
  * @a: array
  * @n: num of elts to print
  */
-void print_array(int *a, n)
+void print_array(int *a, int n)
 {
 	int i;
 
