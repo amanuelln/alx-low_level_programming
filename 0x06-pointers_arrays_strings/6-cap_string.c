@@ -2,7 +2,7 @@
 
 /**
  * cap_string - capitalize string
- * @str: string to cap
+ * @s: string to cap
  *
  * Return: the resulting string
  */
@@ -19,7 +19,7 @@ char *cap_string(char *s)
 		{
 			if (s[i] == spe[j])
 			{
-				if (s[i + 1]) >= 'a' && s[i + 1] <= 'z')
+				if (s[i + 1] >= 'a' && s[i + 1] <= 'z')
 				{
 					s[i + 1] -= 32;
 				}
