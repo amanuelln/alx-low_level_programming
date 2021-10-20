@@ -1,17 +1,18 @@
 #include "main.h"
-
 /**
- * main -prints holberton followed
- * by a new line
- * Return: Always 0 (Success)
- **/
+ * * main - prints _putchar
+ * *
+ * * Return: Always 0 (Success)
+ * */
 int main(void)
 {
-	char c[8] = "_putchar";
-	int i;
-
-	for (i = 0; i < 9; i++)
-		_putchar(c[i]);
-_putchar('\n');
-return (0);
+	int i = 0;
+	char s[] = "_putchar\n";
+	while (s[i])
+	{
+		_putchar (s[i]);
+		i++;
+	}
+	return (0);
 }
+
