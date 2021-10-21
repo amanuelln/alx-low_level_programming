@@ -1,22 +1,24 @@
-#include "main.h"
-
-/*
- * more_numbers - prints 10 times the numbers 0 to 14
+#include "holberton.h"
+/**
+ * more_numbers - print 0..14 ten times
  */
 void more_numbers(void)
 {
 	int i, j;
 
-	for (i = 0; i < 10; i++)
+	i = 0;
+	while (i < 10)
 	{
-		for (j = 0; j < 15; b++)
+		n = 0;
+		while (n <= 14)
 		{
-			if (j > 9)
-				_putchar(j / 10 + '0');
-
-			_putchar(j % 10 + '0');
+			if (n >= 10)
+				_putchar((n / 10) + '0');
+			_putchar((j % 10) + '0');
+			j++;
 		}
-
 		_putchar('\n');
+		i++;
 	}
 }
+
