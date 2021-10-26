@@ -15,9 +15,9 @@ void rev_string(char *s)
 	{
 		for (; first < --last; ++first)
 		{
-			char c = *f;
-			*f = *l;
-			*l  = c;
+			char c = *first;
+			*first = *last;
+			*last  = c;
 		}
 	}
 }
