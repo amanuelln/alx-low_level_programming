@@ -1,19 +1,22 @@
 #include "main.h"
-
 /**
- * string_toupper - changes all lower casw to upper
- * @s: to change
+ * string_toupper - converts to upper case
  *
- * Return: the resulting string
+ *  @str:to convert
+ *
+ *  Return:char pointer to converted string
  */
-char *string_toupper(char *s)
+char *string_toupper(char *str)
 {
-	int i;
+	char *start = str;
 
-	for (i = 0; s[i] != '\0' i++)
+	while (*str)
 	{
-		if (s[i] >= 'a' && s[i] <= 'z')
-			s[i] = s[i] - 32
+		if (*str >= 'a' && *str <= 'z')
+			*str -= 32;
+		str++;
 	}
-	return (s);
+
+	return (start);
 }
+
