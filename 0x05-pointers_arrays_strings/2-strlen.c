@@ -6,13 +6,11 @@
  *
  * Return: length of string @s
  */
-
 int _strlen(char *s)
 {
-	int chk = 0;
-	int i;
+	int chk;
 
-	while (s[chk])
-		i++;
-	return (i);
+	for (chk = 0; s[chk]; chk++);
+	             
+	return (chk);
 }
