@@ -16,3 +16,17 @@ int is_prime_helper(int n, int i)
 		return (0);
 	return (is_prime_helper(n, i - 1));
 }
+
+/**
+ * is_prime_number - prints the prime number
+ * @n: an integer
+ *
+ * Return: 1 if it's a prime number and 0, if otherwise
+ */
+int is_prime_number(int n)
+{
+	if (n < 2)
+		return (0);
+	return (is_prime_helper(n, n / 2));
+}
+
