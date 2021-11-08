@@ -1,15 +1,16 @@
 #include <stdio.h>
-
 /**
- *main - start of program and argumrnt count
- *@argc: argumrnt count
- *@argv: argumrnt vector
- *Return: 0 or 1
+ * main - entry point for program
+ *
+ * @argc: count
+ * @argv: array
+ * Return: 0 (success)
  */
-int main(int argc, char *argv[] __attribute__((unused)))
+int main(int argc, char *argv[])
 {
-
-	printf("%d\n", argc);
-
+	if (!*argv)
+		return (-1);
+	printf("%d\n", argc - 1);
 	return (0);
 }
+
