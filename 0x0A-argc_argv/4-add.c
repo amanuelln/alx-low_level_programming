@@ -10,11 +10,12 @@
  */
 int main(int argc, char *argv[])
 {
-	int i, sum = 0;
+	int i;
+	unsigned int sum = 0;
 
 	for (i = 1; i < argc; i++)
 	{
-		if (!atoi(argv[i])) /* non numeric */
+		if (!atoi(argv[i])) 
 		{
 			printf("Error\n");
 			return (1);

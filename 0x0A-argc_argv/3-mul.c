@@ -2,20 +2,28 @@
 #include <stdlib.h>
 
 /**
- * main - print args
+ * main - multiplies two numbers
  * @argc: count
- * @argv: vector
- * Return: 0 or 1
+ * @argv: values
+ *
+ * Return: mul (0 for success)
+ * and 1 for error
  */
 int main(int argc, char *argv[])
 {
-	int i, mul = 1;
 
-	if (argc > 1)
+	int i;
+	int mul = 1;
+
+	if (argc <= 2)
 	{
-		for (i = 1; i < argc; i++)
-			mul = mul * atoi(argv[i]);
-		printf("%d\n", mul);
+		printf("Error\n");
+		return (1);
 	}
+
+	for (i = 1; i < argc; i++)
+		mul = mul * atoi(argv[i]);
+	printf("%i\n", product);
 	return (0);
 }
+
