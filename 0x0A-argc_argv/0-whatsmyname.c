@@ -1,11 +1,11 @@
- #include <stdio.h>
+#include <stdio.h>
 
 /**
- * main - a program that prints its name
- * @argc: the argument count
- * @argv: argument values or a pointer to an array of strings
+ * main - name of the program
+ * @argc: argument count
+ * @argv: argument vector
  *
- * Return: the name of the program
+ * Return: 0 or 1
  */
 int main(int argc __attribute__((unused)), char *argv[])
 {
@@ -13,4 +13,3 @@ int main(int argc __attribute__((unused)), char *argv[])
 
 	return (0);
 }
-
