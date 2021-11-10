@@ -1,51 +1,36 @@
 #include "main.h"
-#include <stdlib.h>
 #include <stdio.h>
-
+#include <stdlib.h>
 /**
- * str_concat - concatenates two stringd of any size
- * @s1: first
- * @s2: second
+ * str_concat - concatenates two strings
  *
- * Return: two strings
+ * @s1: string 1
+ * @s2: string 2
+ *
+ * Return: pointer to new string, or NULL on failure
  */
 char *str_concat(char *s1, char *s2)
 {
-	int i = 0, j = 0, k = 0, l = 0;
-	char *s;
+	int s1Size = 0, s2Size = 0;
+	char *conc, *concStart;
 
 	if (s1 == NULL)
 		s1 = "";
-
 	if (s2 == NULL)
 		s2 = "";
-
-	while (s1[i])
-		i++;
-
-	while (s2[j])
-		j++;
-
-	l = i + j;
-	s = malloc((sizeof(char) * l) + 1);
-
-	if (s == NULL)
+	while (*(s1 + s1Size))
+		s1Size++;
+	while (*(s2 + s2Size))
+		s2Size++;
+	conc = malloc(sizeof(char) * (s1Size + s2Size + 1));
+	if (conc == NULL)
 		return (NULL);
-
-	j = 0;
-
-	while (k < 1)
-	{
-		if (k <= i)
-			s[k] = s1[k];
-
-		if (k >= i)
-		{
-			s[k] = s2[j];
-			j++;
-		}
-		k++;
-	}
-	s[k] = '\0';
-	return (s);
+	concStart = conc;
+	while (*s1)
+		*conc++ = *s1++;
+	while (*s2)
+		*conc++ = *s2++;
+	*conc = '\0';
+	return (concStart);
 }
+
