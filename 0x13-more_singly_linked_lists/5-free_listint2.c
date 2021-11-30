@@ -1,4 +1,5 @@
 #include "lists.h"
+#include <stdlib.h>
 /**
  * free_listint2 - frees a linked list and sets head to NULL
  * @head: double pointer to head
