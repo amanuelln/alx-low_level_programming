@@ -16,7 +16,7 @@ size_t print_listint(const listint_t *h)
 	{
 		printf("%d\n", temp_h->n);
 		temp_h = temp_h->next;
-		n_nodes++;
+		nodes_num++;
 	}
 	return (nodes_num);
 }
