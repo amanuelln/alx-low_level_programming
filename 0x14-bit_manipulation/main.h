@@ -1,7 +1,6 @@
 #ifndef _MAIN_H_
 #define _MAIN_H_
 
-int _strlen(const char *s);
 int _putchar(char c);
 
 
