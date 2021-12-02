@@ -12,7 +12,7 @@ void print_binary(unsigned long int n)
 
 	while (mask > 0)
 	{
-		if ((n & mask) == 0 && (hit_rel_flag || mask == 0x01))
+		if ((n & mask) == 0 && (rel_flag || mask == 0x01))
 			_putchar('0');
 		else if ((n & mask) != 0)
 		{
