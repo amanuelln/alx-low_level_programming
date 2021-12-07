@@ -54,7 +54,7 @@ int main(int argc, char **argv)
 /**
  * err - allows an error message to print into standard error
  * @message: the message string
- * @fd: the file string
+ * @file: the file string
  * @status: the int status for exit
  */
 void err(char *message, char *file, int status)
@@ -66,7 +66,7 @@ void err(char *message, char *file, int status)
 /**
  * errClose - allows an error message to print into standard error
  * @message: the message string
- * @file: the file string
+ * @fd: the file string
  * @status: the int status for exit
  */
 void errClose(char *message, int fd, int status)
